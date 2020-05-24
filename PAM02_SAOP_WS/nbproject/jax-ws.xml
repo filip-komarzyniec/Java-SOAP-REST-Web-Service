@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="RegisterImage">
+      <implementation-class>edu.pam.RegisterImage</implementation-class>
+    </service>
+    <service name="ListImage">
+      <implementation-class>edu.pam.ListImage</implementation-class>
+    </service>
+    <service name="SearchImageByCreaDate">
+      <implementation-class>edu.pam.SearchImageByCreaDate</implementation-class>
+    </service>
+    <service name="SearchImageByTitle">
+      <implementation-class>edu.pam.SearchImageByTitle</implementation-class>
+    </service>
+    <service name="SearchImageById">
+      <implementation-class>edu.pam.SearchImageById</implementation-class>
+    </service>
+  </services>
+  <clients/>
+  <jsr109>false</jsr109>
+</jax-ws>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/PAM02_SAOP_WS/RegisterImage?wsdl" uri="wsdl/localhost_8080/PAM02_SAOP_WS/RegisterImage.wsdl"/>
+    <system systemId="http://localhost:8080/PAM02_SAOP_WS/RegisterImage?xsd=1" uri="wsdl/localhost_8080/PAM02_SAOP_WS/RegisterImage.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/PAM02_SAOP_WS/ListImage?wsdl" uri="wsdl/localhost_8080/PAM02_SAOP_WS/ListImage.wsdl"/>
+    <system systemId="http://localhost:8080/PAM02_SAOP_WS/ListImage?xsd=1" uri="wsdl/localhost_8080/PAM02_SAOP_WS/ListImage.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/PAM02_SAOP_WS/SearchImageById?wsdl" uri="wsdl/localhost_8080/PAM02_SAOP_WS/SearchImageById.wsdl"/>
+    <system systemId="http://localhost:8080/PAM02_SAOP_WS/SearchImageById?xsd=1" uri="wsdl/localhost_8080/PAM02_SAOP_WS/SearchImageById.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/PAM02_SAOP_WS/SearchImageByTitle?wsdl" uri="wsdl/localhost_8080/PAM02_SAOP_WS/SearchImageByTitle.wsdl"/>
+    <system systemId="http://localhost:8080/PAM02_SAOP_WS/SearchImageByTitle?xsd=1" uri="wsdl/localhost_8080/PAM02_SAOP_WS/SearchImageByTitle.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/PAM02_SAOP_WS/SearchImageByCreaDate?wsdl" uri="wsdl/localhost_8080/PAM02_SAOP_WS/SearchImageByCreaDate.wsdl"/>
+    <system systemId="http://localhost:8080/PAM02_SAOP_WS/SearchImageByCreaDate?xsd=1" uri="wsdl/localhost_8080/PAM02_SAOP_WS/SearchImageByCreaDate.xsd_1.xsd"/>
+</catalog>

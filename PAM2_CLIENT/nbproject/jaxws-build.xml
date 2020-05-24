@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-RegisterImage" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/RegisterImage"/>
+        <property name="wsdl-RegisterImage" location="xml-resources/web-service-references/RegisterImage/wsdl/localhost_8080/PAM02_SAOP_WS/RegisterImage.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/RegisterImage" destdir="${build.generated.dir}/jax-wsCache/RegisterImage" wsdl="${wsdl-RegisterImage}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/PAM02_SAOP_WS/RegisterImage?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-RegisterImage}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/RegisterImage"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/RegisterImage">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-RegisterImage" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/RegisterImage"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/edu/pam"/>
+    </target>
+    <target name="wsimport-client-ListImage" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ListImage"/>
+        <property name="wsdl-ListImage" location="xml-resources/web-service-references/ListImage/wsdl/localhost_8080/PAM02_SAOP_WS/ListImage.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ListImage" destdir="${build.generated.dir}/jax-wsCache/ListImage" wsdl="${wsdl-ListImage}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/PAM02_SAOP_WS/ListImage?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-ListImage}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ListImage"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ListImage">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ListImage" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ListImage"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/edu/pam"/>
+    </target>
+    <target name="wsimport-client-SearchImageByCreaDate" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/SearchImageByCreaDate"/>
+        <property name="wsdl-SearchImageByCreaDate" location="xml-resources/web-service-references/SearchImageByCreaDate/wsdl/localhost_8080/PAM02_SAOP_WS/SearchImageByCreaDate.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SearchImageByCreaDate" destdir="${build.generated.dir}/jax-wsCache/SearchImageByCreaDate" wsdl="${wsdl-SearchImageByCreaDate}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/PAM02_SAOP_WS/SearchImageByCreaDate?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-SearchImageByCreaDate}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/SearchImageByCreaDate"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/SearchImageByCreaDate">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-SearchImageByCreaDate" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/SearchImageByCreaDate"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/edu/pam"/>
+    </target>
+    <target name="wsimport-client-SearchImageByTitle" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/SearchImageByTitle"/>
+        <property name="wsdl-SearchImageByTitle" location="xml-resources/web-service-references/SearchImageByTitle/wsdl/localhost_8080/PAM02_SAOP_WS/SearchImageByTitle.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SearchImageByTitle" destdir="${build.generated.dir}/jax-wsCache/SearchImageByTitle" wsdl="${wsdl-SearchImageByTitle}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/PAM02_SAOP_WS/SearchImageByTitle?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-SearchImageByTitle}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/SearchImageByTitle"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/SearchImageByTitle">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-SearchImageByTitle" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/SearchImageByTitle"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/edu/pam"/>
+    </target>
+    <target name="wsimport-client-SearchImageById" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/SearchImageById"/>
+        <property name="wsdl-SearchImageById" location="xml-resources/web-service-references/SearchImageById/wsdl/localhost_8080/PAM02_SAOP_WS/SearchImageById.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SearchImageById" destdir="${build.generated.dir}/jax-wsCache/SearchImageById" wsdl="${wsdl-SearchImageById}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/PAM02_SAOP_WS/SearchImageById?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-SearchImageById}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/SearchImageById"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/SearchImageById">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-SearchImageById" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/SearchImageById"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/edu/pam"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-RegisterImage, wsimport-client-ListImage, wsimport-client-SearchImageByCreaDate, wsimport-client-SearchImageByTitle, wsimport-client-SearchImageById"/>
+</project>

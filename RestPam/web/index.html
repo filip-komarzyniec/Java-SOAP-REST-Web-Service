@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Image Registration</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a class="anchor" href="webresources/generic/list/">List all images</a>
+        <a class="anchor" href="searchByID.html">Search images by ID</a>
+        <a class="anchor" href="searchByCreationDate.html">Search images by creation date</a>
+        <a class="anchor" href="searchByTitle.html">Search images by title</a>
+        <a class="anchor" href="searchMixed.html">Search by mixed parameters</a>
+        <form class="main-content" method="POST" action="webresources/generic/register" >
+            <table> 
+                <tr>
+                    <th colspan="2">Fill Database fields</th>
+                </tr>
+                <tr>                    
+                    <td>Title</td>                
+                    <td><input type="text" name="title" id="title" /></td>           
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td><textarea name="description" id="description" placeholder="Enter text here..." ></textarea> </td>
+                </tr>
+                <tr>
+                    <td>Keywords</td>
+                    <td><input type="text" name="keywords" id="keywords" /></td></tr>
+                <tr>
+                    <td>Author</td>
+                    <td><input type="text" name="author" id="author" /> </td></tr>                 
+                <tr>
+                    <td>Creation date</td>
+                    <td><input type="date" name="creation" id="creation" /> </td></tr>                                    
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type="submit" value="Register" name="register" id="register" />                    
+                </tr>
+            </table>
+        </form>               
+    </body>
+</html>

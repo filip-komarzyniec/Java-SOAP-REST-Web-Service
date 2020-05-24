@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+  <endpoint implementation="edu.pam.RegisterImage" name="RegisterImage" url-pattern="/RegisterImage"/>
+  <endpoint implementation="edu.pam.ListImage" name="ListImage" url-pattern="/ListImage"/>
+  <endpoint implementation="edu.pam.SearchImageByCreaDate" name="SearchImageByCreaDate" url-pattern="/SearchImageByCreaDate"/>
+  <endpoint implementation="edu.pam.SearchImageByTitle" name="SearchImageByTitle" url-pattern="/SearchImageByTitle"/>
+  <endpoint implementation="edu.pam.SearchImageById" name="SearchImageById" url-pattern="/SearchImageById"/>
+</endpoints>

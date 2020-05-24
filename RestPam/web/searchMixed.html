@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <a class="anchor" href="/RestPam">Go back to menu</a>
+        <form class="main-content" method="get" action="webresources/generic/searchMixed/" onsubmit="send()" >
+            <table> 
+                <tr>
+                    <th colspan="3">Search using mixed criteria</th>
+                </tr>
+                <tr>                    
+                    <td>Title</td>                
+                    <td><select name="logic"> <option>AND</option> <option>OR</option> </select></td>
+                    <td><select> <option>Description</option> <option>Author</option> </select></td>
+                </tr>                             
+                <tr><td><input type="text" name="title" id="title" /></td>
+                    <td></td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center;">
+                    <input style="text-align: center" type="submit" value="Search"/>                    
+                </tr>
+            </table>
+        </form>        
+        <script>
+            function send(){
+                var scnd_input = document.getElementsByTagName("input")[1];
+                var select_elem_value = document.getElementsByTagName("select")[1].value;
+                if(select_elem_value == "Description") {
+                    scnd_input.name = 'description';
+                    scnd_input.id = 'description';
+                } else {
+                    scnd_input.name = 'author';
+                    scnd_input.id = 'author';
+                }
+            }
+            
+        </script>
+    </body>
+</html>
